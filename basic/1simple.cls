@@ -103,3 +103,4 @@ switch on () {
 // Ternary operators
 Uses ?: () ? if true : if false
 // Left associative
+// This is a short hand for If then else

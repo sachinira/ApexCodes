@@ -1,0 +1,18 @@
+<template>
+    <div class="slds-var-m-around_large">
+        <h1>Welcome to Salesforce</h1>
+        <lightning-input label="Type Here" required value={inputText} onchange={handleClick}>    
+        </lightning-input>
+        <p>{greeting}</p>
+        <p>{inputText}</p>
+        <p><lightning-button label="Click" onclick={handleSubmit}></lightning-button></p>
+    </div>
+
+    <div class="slds-var-m-around_large">
+        <template for:each={result} for:item ="contact">
+            <p key={contact.Id}>
+                {contact.Name}
+            </p>
+        </template>
+    </div>
+</template>
